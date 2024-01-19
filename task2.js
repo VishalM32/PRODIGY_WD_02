@@ -1,7 +1,7 @@
 let startTime;
 let isRunning = false;
 let lapCounter = 1;
-let intervalId; // Variable to store the interval ID
+let intervalId; 
 
 function startStopwatch() {
     if (!isRunning) {
@@ -15,7 +15,7 @@ function startStopwatch() {
 function pauseStopwatch() {
     if (isRunning) {
         isRunning = false;
-        clearInterval(intervalId); // Clear the interval
+        clearInterval(intervalId); /
     }
 }
 
@@ -25,7 +25,7 @@ function resetStopwatch() {
     lapCounter = 1;
     updateDisplay();
     document.getElementById("laps").innerHTML = "";
-    clearInterval(intervalId); // Clear the interval
+    clearInterval(intervalId); 
 }
 
 function recordLap() {
